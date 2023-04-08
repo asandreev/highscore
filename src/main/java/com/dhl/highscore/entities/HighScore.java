@@ -18,7 +18,7 @@ public class HighScore {
     private long id;
 
     @Column(name = "HIGH_SCORE_TIMESTAMP")
-    private LocalDateTime highScoreTimestamp;
+    private LocalDateTime highScoreTimestamp = LocalDateTime.now();
 
     @Column(name = "NAME")
     private Integer score;
